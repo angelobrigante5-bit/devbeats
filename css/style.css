@@ -152,8 +152,8 @@ a {
         margin: 10px 0;
     }
 
-    #menu-check:checked + .menu-check + ul {
-        display: flex;
+    #menu-check:checked ~ ul {
+    display: flex;
     }
 
     .hero h2 {
