@@ -145,7 +145,7 @@ a {
         display: block;
     }
 
-    ul {
+    nav ul {
         display: none;
         flex-direction: column;
         align-items: flex-end;
@@ -158,7 +158,7 @@ a {
         margin: 10px 0;
     }
 
-    #menu-check:checked + .menu-check + ul {
+    #menu-check:checked + .menu-check + nav ul {
         display: flex;
     }
 
@@ -240,6 +240,16 @@ a {
     width: 100%;
     max-width: 350px;
     border-radius: 10px;
+}
+
+.about-list {
+    margin-top: 20px;
+    list-style: none;
+}
+
+.about-list li {
+    margin-bottom: 10px;
+    color: $text-secondary;
 }
 
 html {
