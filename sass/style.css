@@ -147,9 +147,9 @@ a {
   ul li {
     margin: 10px 0;
   }
-  #menu-check:checked + .menu-check + ul {
+  #menu-check:checked ~ ul {
     display: flex;
-  }
+    }
   .hero h2 {
     font-size: 2rem;
   }
