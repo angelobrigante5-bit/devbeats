@@ -147,7 +147,7 @@ a {
   ul li {
     margin: 10px 0;
   }
-  #menu-check:checked + .menu-check + nav ul {
+  #menu-check:checked + .menu-check + ul {
     display: flex;
   }
   .hero h2 {
