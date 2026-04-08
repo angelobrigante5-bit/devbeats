@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBeats</title>
+
+    <meta property="og:title" content="DevBeats - Web Developer & Music Creator">
+    <meta property="og:description" content="Portfolio personale tra sviluppo web e musica rap. Scopri il mio mondo.">
+    <meta property="og:image" content="https://imgur.com/a/rpEar39">
+    <meta property="og:url" content="https://tuo-username.github.io/devbeats">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/icona.png" type="image/png">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="images/logo-devbeats.png" alt="DevBeats Logo">
+            </a>
+            <input type="checkbox" id="menu-check">
+            <label for="menu-check" class="menu-check">☰</label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">Chi sono</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contact.html">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <h2>Web Developer & Music Creator</h2>
+            <p>Trasformo idee in codice con il ritmo della musica.</p>
+    </section>
+
+    <section class="about-preview" id="about">
+        <div class="about-text">
+            <h3>Chi sono</h3>
+                <p>
+                    Sono uno sviluppatore web in crescita con una forte passione per la musica.
+                    Mi occupo di creare interfacce moderne e responsive, unendo logica e creatività.
+                </p>
+                <a href="about.html" class="btn">Scopri di più</a>
+        </div>
+        <div class="about-image">
+            <img src="images/me.jpg" alt="Foto profilo">
+        </div>
+    </section>
+    
+    <section class="skills">
+        <h3>Le mie skills</h3>
+
+        <div class="skill">
+            <p>HTML</p>
+            <div class="progress">
+            <div class="progress-bar html"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <p>CSS</p>
+            <div class="progress">
+                <div class="progress-bar css"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <p>Responsive Design</p>
+            <div class="progress">
+                <div class="progress-bar responsive"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <p>Creatività</p>
+            <div class="progress">
+                <div class="progress-bar creativity"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="music">
+        <h3>La mia musica</h3>
+
+        <div class="music-container">
+            <div class="music-card">
+                <h4>Le mie produzioni</h4>
+                <p> Produco basi rap e trap, curando ogni dettaglio: dalle melodie ai drum pattern.
+                    Mi piace creare atmosfere che trasmettano emozioni e carattere.</p>
+            </div>
+
+            <div class="music-card">
+                <h4>I miei generi</h4>
+                <p>Mi muovo tra rap, trap e sonorità più sperimentali, cercando sempre un sound personale
+                    e riconoscibile.</p>
+            </div>
+
+            <div class="music-card">
+                <h4>Ascolta una mia traccia</h4>
+
+                <iframe data-testid="embed-iframe" style="border-radius:12px" 
+                src="https://open.spotify.com/embed/track/0BJVcvoENjmRKwo82wASG0?utm_source=generator&theme=0" 
+                width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay;
+                 clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+                </iframe>
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>

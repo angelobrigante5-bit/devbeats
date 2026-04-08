@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti - DevBeats</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/icona.png" type="image/png">
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="index.html" class="logo">
+            <img src="images/logo-devbeats.png" alt="DevBeats Logo">
+        </a>
+
+        <input type="checkbox" id="menu-check">
+        <label for="menu-check" class="menu-check">☰</label>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">Chi sono</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="contact.html">Contatti</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="contact">
+    <h2>Contattami</h2>
+
+    <form id="contact-form">
+    <input type="text" name="name" placeholder="Nome" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="message" placeholder="Scrivi il tuo messaggio..." required></textarea>
+    <button type="submit">Invia</button>
+</form>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+(function(){
+    emailjs.init("bhRGzhz9aChtIcTef");
+})();
+</script>
+
+<script>
+document.getElementById("contact-form")
+.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm(
+        "service_w0z4jnh",
+        "template_23sblbr",
+        this
+    ).then(function() {
+        alert("Messaggio inviato!");
+    }, function(error) {
+        alert("Errore nell'invio");
+    });
+});
+</script>
+</body>
+</html>
