@@ -11,6 +11,9 @@ $text-secondary: #b3b3b3;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: $bg-color;
@@ -63,6 +66,10 @@ ul {
     gap: 20px;
 }
 
+section {
+    margin-bottom: 80px;
+}
+
 a {
     color: $text-color;
     text-decoration: none;
@@ -78,6 +85,12 @@ a {
     padding-top: 80px;
 }
 
+.hero h2,
+.hero p {
+    position: relative;
+    z-index: 1;
+} 
+
 .hero h2 {
     font-size: 3rem;
     margin-bottom: 20px;
@@ -85,6 +98,30 @@ a {
 
 .hero p {
     font-size: 1.2rem;
+    color: $text-secondary;
+}
+
+.hero-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.btn.secondary {
+    background-color: transparent;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+}
+
+.hero-sub {
+    margin-top: 10px;
+    color: $text-secondary;
+    font-style: italic;
+}
+
+.scroll-hint {
+    margin-top: 40px;
+    font-size: 0.9rem;
     color: $text-secondary;
 }
 
@@ -187,6 +224,10 @@ a {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+}
+
+.btn:hover {
+    background-color: $primary-color;
 }
 
 .about-image {
@@ -316,6 +357,10 @@ form {
     gap: 15px;
 }
 
+main {
+    flex: 1;
+}
+
 input, textarea {
     padding: 10px;
     border: none;
@@ -372,4 +417,19 @@ input:focus, textarea:focus {
 
 .cv-section ul li {
     margin-bottom: 5px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: $secondary-bg;
+}
+
+.footer a {
+    margin: 0 10px;
+    color: $primary-color;
+}
+
+.img-icon{
+    padding-right: 10px;
 }
